@@ -1,5 +1,5 @@
 var assert = require('assert'),
-    colors = require('../lib/index');
+  colors = require('../lib/index');
 
 var s = 'string';
 
@@ -43,8 +43,9 @@ aE(s, 'yellow', 33);
 
 assert.equal(s, 'string');
 
-colors.setTheme({error:'red'});
+colors.setTheme({
+  error: 'red'
+});
 
-assert.equal(typeof("astring".red),'string');
-assert.equal(typeof("astring".error),'string');
-
+assert.equal(typeof("astring".red), 'string');
+assert.equal(typeof("astring".error), 'string');
